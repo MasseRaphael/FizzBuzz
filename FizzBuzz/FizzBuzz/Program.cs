@@ -10,23 +10,17 @@ namespace FizzBuzz
 
             do
             {
-                if (compte % 3 == 0 && compte % 5 == 0)
+                Console.Write($"{compte} ");
+                if (compte % 3 == 0)
                 {
-                    Console.WriteLine(compte + "FizzBuzz");
+                    Console.Write("Fizz");
                 }
-                else if (compte % 3 == 0)
+                if (compte % 5 == 0)
                 {
-                    Console.WriteLine(compte + "Fizz");
+                    Console.Write("Buzz");
                 }
-                else if (compte % 5 == 0)
-                {
-                    Console.WriteLine(compte + "Buzz");
-                }
-                else
-                {
-                   Console.WriteLine(compte); 
-                }
-                compte = compte + 1;
+                Console.WriteLine("");
+                compte ++;
             } while (compte <= 200);
         }
     }
