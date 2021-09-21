@@ -6,7 +6,7 @@ namespace FizzBuzz
     {
         public static void Main()
         {
-            int compte = 1;
+            int compte = 0;
 
             do
             {
@@ -14,13 +14,13 @@ namespace FizzBuzz
                 {
                     Console.WriteLine(compte + "FizzBuzz");
                 }
+                else if (compte % 3 == 0)
+                {
+                    Console.WriteLine(compte + "Fizz");
+                }
                 else if (compte % 5 == 0)
                 {
                     Console.WriteLine(compte + "Buzz");
-                }
-                else if (compte % 3 ==0)
-                {
-                    Console.WriteLine(compte + "Fizz");
                 }
                 else
                 {
